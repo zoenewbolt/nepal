@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital@0;1&display=swap');
+
+/* text styling */
+
+body {
+    color: #222;
+    font-family: "Roboto Condensed", "Helvetica","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h1 { 
+    color: #1011AC;
+    font-family: "Bebas Neue", "Tahoma","Arial", sans-serif;
+    font-weight: 400; 
+    font-size: 42px;
+    text-align: center;
+}
+
+h2 {
+    color: #C12323;
+    font-family: "Bebas Neue", "Tahoma","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 32px; 
+    padding-top: 120px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+h3{
+    color:   #4d4d4d;
+    font-family: "Bebas Neue", "Tahoma","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+}
+
+h4{
+    color: #222;
+    font-family: "Bebas Neue", "Tahoma","Arial", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+table,
+th,
+td {
+    border: 3px solid #1011AC;
+    border-collapse: collapse;
+}
+
+th,
+td{
+    padding: 4px 6px;
+}
+
+th{
+    background-color: #b3d9ff;
+}
+
+/* link states */
+
+a:link {
+    color: #0066ff;
+}
+
+a:visited {
+    color: #660033;
+}
+
+a:hover {
+    color: #000099;
+}
+
+a:active {
+    color: #222;
+}
+
+/* layout */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #dddddd;
+    z-index: 100;
+}
+
+body {
+    margin: 0;
+    padding: 150px;
+    padding-top: 100px; 
+}
+
+nav ul {
+    padding: 0px, 10px, 0px, 10px;
+    margin: 0 auto; 
+    text-align: left;
+    width: 230px; 
+}
+
+nav{
+    padding-top: 10px;
+}
+
+.history{
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.everest{
+    margin: 0 auto; 
+    text-align: left;
+    width: 550px; 
+} 
+
+.everest-pic{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.flag{
+    margin: 0 auto; 
+    text-align: left;
+    width: 250px; 
+    padding-top: 50px;
+}
+
+#flag-pic {
+    grid-area: flag-pic;
+}
+
+#flag-info {
+    grid-area: flag-info;
+}
+
+.flag-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 100px; 
+    padding-right: 100px;
+    padding-left: 100px;
+    grid-template-areas:
+    "flag-pic   flag-info";
+}
+
+/* geography */
+
+#location{
+    grid-area: location;
+}
+
+#coordinates {
+    grid-area: coordinates;
+}
+
+#area {
+    grid-area: area;
+}
+
+#comparison {
+    grid-area: comparison;
+}
+
+#climate {
+    grid-area: climate;
+}
+
+#terrain {
+    grid-area: terrain;
+}
+
+#hazards {
+    grid-area: hazards;
+}
+
+.geo-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-areas:
+    "location   comparison"
+    "coordinates    comparison"
+    "climate     comparison"
+    "terrain    area"
+    "hazards    area";
+}
+
+.area-table{
+    margin: 0 auto;
+}
+
+/* people and society */
+
+#population{
+    grid-area: population;
+}
+
+#nationality{
+    grid-area: nationality;
+}
+
+#age-structure{
+    grid-area: age-structure;
+}
+
+#pyramid{
+    grid-area: pyramid;
+}
+
+#fertility{
+    grid-area: fertility;
+}
+
+.pands{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 300px 520px;
+    grid-gap: 50px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-areas:
+    "nationality    population  fertility"
+    "age-structure age-structure  age-structure"
+    "pyramid        pyramid     pyramid";
+}
+
+.pyramid {
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.nanda{
+    text-align: left
+}
+
+.age-table{
+    margin: 0 auto; 
+}
+
+/* government */
+
+#type{
+    grid-area: type;
+}
+
+#capital{
+    grid-area: capital;
+}
+
+#katmandu{
+    grid-area: katmandu;
+}
+
+.gov-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-template-areas:
+    "type   katmandu"
+    "capital    katmandu";
+}
+
+/* more information  */
+
+.more-info{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+/* footer */
+
+footer {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
